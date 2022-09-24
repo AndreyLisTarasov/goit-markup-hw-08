@@ -10,6 +10,7 @@
 .team-list{
     display: flex;
     flex-direction: column;
+    gap: 30px;
     padding-left: 0;
     width: calc(100% - 90px)/4;
     & .item:not(:last-child){

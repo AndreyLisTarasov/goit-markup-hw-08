@@ -1,18 +1,17 @@
 .clients-title{
-    font-size: 36px;
-    line-height: 1.17;
+    @include font(28px, 700, 33px);    
     text-align: center;
     letter-spacing: 0.03em;
-    margin-bottom: 50px;    
+    margin-bottom: 30px;    
 }
 .clients-list{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     gap: 30px;
 }
-.clients-link{    
+.clients-list__link{    
     @extend %align;
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
