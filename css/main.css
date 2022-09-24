@@ -18,7 +18,7 @@
   overflow: hidden;
 }
 
-.clients-list__link, .socnetwork__link, .work-thumb-box, .feature-list__wrapper, .modal-form-check-field, .modal-btn-close, .subscribe-form__btn, .join-list__link {
+.clients-list__link, .socnetwork__link, .work-thumb-box, .feature-list__wrapper, .modal-btn-close, .subscribe-form__btn, .join-list__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -233,6 +233,7 @@ button {
 .header {
   padding-top: 10px;
   padding-bottom: 7px;
+  border-bottom: 1px solid #ECECEC;
 }
 
 .header__container {
@@ -533,8 +534,8 @@ address {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -563,7 +564,7 @@ address {
 .modal-form-title {
   font-size: 20px;
   font-weight: 700;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
@@ -586,7 +587,8 @@ address {
 .modal-form-field-desc {
   display: block;
   font-size: 12px;
-  line-height: 1.16;
+  font-weight: 400;
+  line-height: 1.1666666667;
   letter-spacing: 0.01em;
   color: var(--secondary-text-color);
   margin-bottom: 4px;
@@ -636,17 +638,20 @@ address {
   border-color: var(--main-link-color);
 }
 .modal-form-message::placeholder {
+  font-size: 14px;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.15;
+  line-height: 1.1428571429;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
 .modal-form-check-field {
+  display: flex;
+  align-items: center;
   margin-bottom: 30px;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
@@ -657,8 +662,7 @@ address {
   border: 2px solid #212121;
   border-radius: 2px;
   cursor: pointer;
-  margin-right: 7px;
-  margin-left: 12px;
+  margin-right: 8px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form-check:checked + .modal-form-own-checkbox {
@@ -679,12 +683,12 @@ address {
 
 .modal-form-check-policy {
   display: block;
+  font-size: 12px;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
   text-decoration-line: underline;
-  color: #2196F3;
+  color: #2196f3;
   outline: none;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -697,16 +701,16 @@ address {
   min-height: 50px;
   align-self: center;
   padding: 10px 52px;
-  background: #2196F3;
+  background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 1px;
   border-radius: 4px;
-  font-weight: 700;
   font-size: 16px;
-  line-height: 1.88;
+  font-weight: 700;
+  line-height: 1.875;
   letter-spacing: 0.06em;
   cursor: pointer;
-  color: #FFFFFF;
+  color: #ffffff;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form-send:focus, .modal-form-send:hover {
@@ -929,9 +933,9 @@ address {
 
 .button-list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   padding-left: 0;
 }
 .button-list .item:not(:last-child) {
@@ -944,59 +948,35 @@ address {
   padding-left: 0;
 }
 
-.project-list .item {
-  margin-right: 30px;
+.project-list__item {
   margin-bottom: 30px;
 }
-.project-list .item:nth-child(3n) {
+.project-list__item:nth-child(3n) {
   margin-right: 0px;
 }
-.project-list .item:nth-last-child(-n+3) {
+.project-list__item:nth-last-child(-n+3) {
   margin-bottom: 0;
-}
-
-.project-list .link {
-  display: block;
-  text-decoration: none;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.project-list .link:focus, .project-list .link:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.project-border {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 24px;
-  padding-right: 24px;
-  border-top: none;
-  border: 1px solid #EEEEEE;
-}
-
-.project-list .title {
-  margin-bottom: 4px;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: var(--primary-text-color);
-}
-
-.project-list .text {
-  line-height: 1.88;
-  letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
 }
 
 .project-thumb {
   position: relative;
 }
 
-.project-action {
+.project-list__link {
+  display: block;
+  text-decoration: none;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.project-list__link:focus, .project-list__link:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.project-list-action {
   position: relative;
   overflow: hidden;
 }
 
-.project-overlay {
+.project-list-action__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -1006,23 +986,49 @@ address {
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.project-thumb:hover .project-overlay {
+.project-thumb:hover .project-list-action__overlay {
   transform: translateY(0);
 }
 
-.project-action-box {
+.project-list-action__box {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-width: 322px;
-  min-height: 168px;
+  min-width: 402px;
+  min-height: 140px;
 }
 
-.project-action-text {
+.project-list-action__text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5555555556;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.project-list-border {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-top: none;
+  border: 1px solid #EEEEEE;
+}
+
+.project-list-border__title {
+  margin-bottom: 4px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--primary-text-color);
+}
+
+.project-list-border__text {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.6666666667;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--secondary-text-color);
 }/*# sourceMappingURL=main.css.map */
