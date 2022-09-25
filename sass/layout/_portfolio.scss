@@ -23,7 +23,7 @@
 .project-thumb {
   position: relative;
 }
-.project-list__link {
+.project-thumb__link {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -35,11 +35,11 @@
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 }
-.project-list-action {
+.project-thumb__action {
   position: relative;
   overflow: hidden;
 }
-.project-list-action__overlay {
+.project-thumb__overlay{
   position: absolute;
   top: 0;
   left: 0;
@@ -52,15 +52,15 @@
     transform: translateY(0);
   }
 }
-.project-list-action__box {
+.project-thumb__box {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-width: 402px;
-  min-height: 140px;
+  min-width: 322px;
+  min-height: 168px;
 }
-.project-list-action__text {
+.project-thumb__text {
   @include font(18px, 400, 28px);
   letter-spacing: 0.03em;
   color: #ffffff;
