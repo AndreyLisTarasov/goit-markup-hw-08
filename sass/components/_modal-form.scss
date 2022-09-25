@@ -130,3 +130,18 @@
     border: 1px solid var(--main-link-color);
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .modal-form-title {
+    @include font(20px, 700, 23px);
+  }
+  .modal-form-message::placeholder{
+    @include font(12px, 400, 14px);
+  }
+  .modal-form-check-field{
+     @include font(14px, 400, 24px);
+  }
+  .modal-form-check-policy {
+    @include font(14px, 400, 24px);
+  }
+}
