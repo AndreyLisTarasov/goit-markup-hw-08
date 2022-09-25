@@ -12,10 +12,6 @@
   flex-direction: column;
   gap: 30px;
   padding-left: 0;
-  // width: calc(100% - 90px)/4;
-    //   & .item:not(:last-child) {
-    //     margin-right: 30px;
-    //   }
 }
 .team-list-box {
   padding-top: 30px;
@@ -64,5 +60,12 @@
   .team-list {
     flex-direction: row;
     flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-title{
+     @include font(36px, 700, 42px);
+     margin-bottom: 50px;
   }
 }

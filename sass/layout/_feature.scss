@@ -36,3 +36,12 @@
     width: 354px;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .feature-list {
+    flex-wrap: nowrap;
+  }
+  .feature-list__item{
+    width: 270px;
+  }
+}

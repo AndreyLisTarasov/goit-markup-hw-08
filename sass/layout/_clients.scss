@@ -30,3 +30,13 @@
     width: 226px;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .clients-title {
+    @include font(36px, 700, 42px);
+    margin-bottom: 50px;
+  }
+  .clients-list__link {
+    width: 170px;
+  }
+}

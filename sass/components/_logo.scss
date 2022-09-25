@@ -1,9 +1,7 @@
 .logo{
     display: inline-block;
     font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
+    @include font(24px, 700, 28px);
     letter-spacing: 0.03em;
     text-decoration: none;
     color: #000;
@@ -16,4 +14,10 @@
 }
 .logo__other{
     color: #FFFFFF;
+}
+
+@media screen and (min-width: 1200px){
+    .logo{
+       @include font(26px, 700, 31px); 
+    }
 }

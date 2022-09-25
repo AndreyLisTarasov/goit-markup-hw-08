@@ -69,9 +69,6 @@ address {
     background-color: #2196f3;
   }
 }
-.subscribe {
-  margin-bottom: 60px;
-}
 .subscribe-form {
   display: flex;
   flex-direction: column;
@@ -130,5 +127,27 @@ address {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: flex-start;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer .container {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .footer-address{
+    margin-bottom: 0;
+  }
+  .join{
+    margin-bottom: 0;
+  }
+  .subscribe-form {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  .subscribe-form__input {
+    width: 358px;
+    margin-bottom: 0;
+    margin-right: 12px;
   }
 }
