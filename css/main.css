@@ -770,7 +770,7 @@ address {
 .feature-list__wrapper {
   height: 120px;
   margin-bottom: 30px;
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
   border-radius: 4px;
 }
 
@@ -792,7 +792,24 @@ address {
   color: var(--secondary-text-color);
 }
 
+@media screen and (min-width: 768px) {
+  .feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    gap: 30px;
+  }
+  .feature-list__item {
+    width: 354px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .work {
+    display: none;
+  }
+}
 .work-title {
+  display: none;
   margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.17;
