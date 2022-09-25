@@ -69,11 +69,13 @@ address {
     background-color: #2196f3;
   }
 }
+.subscribe {
+  margin-bottom: 60px;
+}
 .subscribe-form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 60px;
 }
 .subscribe-form__title {
   display: block;
@@ -120,4 +122,13 @@ address {
 }
 .subscribe-form__send {
   margin-left: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
 }
