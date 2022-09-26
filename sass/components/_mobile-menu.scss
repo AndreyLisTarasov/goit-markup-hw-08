@@ -1,3 +1,4 @@
+
 .mobile-menu {
   display: flex;
   flex-direction: column;
@@ -23,6 +24,8 @@
 .mobile-menu__container {
   position: relative;
   padding-left: 40px;
+  width: 480px;
+  height: 796px;
 }
 .mobile-menu__close-btn {
   position: absolute;
@@ -40,7 +43,7 @@
 
 .mobile-menu-nav {
   padding-top: 48px;
-  padding-bottom: 300px;
+  padding-bottom: 300px;  
 }
 .mobile-menu-nav__link {
   display: block;
@@ -50,10 +53,12 @@
   cursor: pointer;
   color: #212121;
   &:hover,
-  &:focus{
+  &:focus {
     color: var(--main-link-color);
   }
 }
+
+
 .mobile-menu-contacts__item {
   margin-bottom: 32px;
 }
@@ -62,7 +67,7 @@
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
   &:hover,
-  &:focus{
+  &:focus {
     color: var(--main-link-color);
   }
 }
@@ -71,7 +76,7 @@
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
   &:hover,
-  &:focus{
+  &:focus {
     color: var(--main-link-color);
   }
 }
@@ -86,4 +91,10 @@
   @include font(18px, 500, 22px);
   letter-spacing: 0.02em;
   color: var(--main-link-color);
+}
+.mobile-menu-social__link::after {
+  content: '';
+  margin-left: 10px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
 }

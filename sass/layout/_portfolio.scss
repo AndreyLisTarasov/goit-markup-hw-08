@@ -1,6 +1,7 @@
 .button-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: start;
   margin-top: 0;
   margin-bottom: 40px;
   padding-left: 0;
@@ -57,8 +58,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-width: 322px;
-  min-height: 168px;
+  min-width: 410px;
+  min-height: 140px;
 }
 .project-thumb__text {
   @include font(18px, 400, 28px);
@@ -90,6 +91,9 @@
   .project-list {
     gap: 30px;
   }
+  .project-thumb__box{
+    min-width: 306px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -97,5 +101,9 @@
     flex-wrap: nowrap;
     justify-content: center;
     margin-bottom: 50px;
+  }
+   .project-thumb__box{
+    min-width: 322px;
+    min-height: 168px;
   }
 }
