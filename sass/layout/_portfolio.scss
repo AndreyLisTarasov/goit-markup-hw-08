@@ -10,16 +10,8 @@
 .project-list {
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
   padding-left: 0;
-}
-.project-list__item {
-  margin-bottom: 30px;
-  &:nth-child(3n) {
-    margin-right: 0px;
-  }
-  &:nth-last-child(-n + 3) {
-    margin-bottom: 0;
-  }
 }
 .project-thumb {
   position: relative;
@@ -40,7 +32,7 @@
   position: relative;
   overflow: hidden;
 }
-.project-thumb__overlay{
+.project-thumb__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -88,10 +80,7 @@
   .button-list {
     margin-bottom: 40px;
   }
-  .project-list {
-    gap: 30px;
-  }
-  .project-thumb__box{
+  .project-thumb__box {
     min-width: 306px;
   }
 }
@@ -102,7 +91,7 @@
     justify-content: center;
     margin-bottom: 50px;
   }
-   .project-thumb__box{
+  .project-thumb__box {
     min-width: 322px;
     min-height: 168px;
   }
