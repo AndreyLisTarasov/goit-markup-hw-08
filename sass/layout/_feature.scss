@@ -5,7 +5,8 @@
   gap: 30px;
 }
 .feature-list__item {
-  width: 450px;
+  width: 100%;
+  max-width: 450px;
 }
 .feature-list__wrapper {
   @extend %align;
@@ -41,7 +42,7 @@
   .feature-list {
     flex-wrap: nowrap;
   }
-  .feature-list__item{
+  .feature-list__item {
     width: 270px;
   }
 }
