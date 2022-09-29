@@ -443,13 +443,7 @@ address {
   background-color: #2196f3;
 }
 
-.subscribe-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.subscribe-form__title {
+.subscribe__title {
   display: block;
   margin-bottom: 20px;
   font-size: 14px;
@@ -461,8 +455,14 @@ address {
   color: #ffffff;
 }
 
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .subscribe-form__input {
-  width: 450px;
+  max-width: 450px;
   height: 50px;
   background-color: #2f303a;
   color: #ffffff;
@@ -500,6 +500,11 @@ address {
   margin-left: 10px;
 }
 
+@media screen and (min-width: 480px) {
+  .subscribe-form__input {
+    width: 450px;
+  }
+}
 @media screen and (min-width: 768px) {
   .footer .container {
     flex-direction: row;
@@ -518,6 +523,9 @@ address {
   }
   .join {
     margin-bottom: 0;
+  }
+  .subscribe__title {
+    text-align: start;
   }
   .subscribe-form {
     flex-direction: row;
