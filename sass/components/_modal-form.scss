@@ -69,7 +69,7 @@
   }
 }
 .modal-form-check-field {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   margin-bottom: 30px;
   @include font(12px, 400, 14px);
@@ -112,8 +112,6 @@
   }
 }
 .modal-form-send {
-  // min-width: 200px;
-  // min-height: 50px;
   align-self: center;
   padding: 10px 52px;
   background: #2196f3;
@@ -144,7 +142,7 @@
   }
 }
 
-@media screen and (max-width: 433px) {
+@media screen and (max-width: 479px) {
   .modal-form-check-field {
     display: inline-block;
   }
