@@ -1,11 +1,10 @@
 .button-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: start;
-  margin-top: 0;
+  column-gap: 8px;
+  row-gap: 15px;  
   margin-bottom: 40px;
-  padding-left: 0;
-  gap: 8px;
+  max-width: 326px;  
 }
 .project-list {
   display: flex;
@@ -80,6 +79,7 @@
 @media screen and (min-width: 768px) {
   .button-list {
     margin-bottom: 40px;
+    justify-content: center;
   }
   .project-thumb__box {
     min-width: 306px;
@@ -89,7 +89,6 @@
 @media screen and (min-width: 1200px) {
   .button-list {
     flex-wrap: nowrap;
-    justify-content: center;
     margin-bottom: 50px;
   }
   .project-thumb__box {

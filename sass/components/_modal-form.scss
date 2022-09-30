@@ -10,6 +10,7 @@
   flex-direction: column;
 }
 .modal-form-field {
+  display: block;
   margin-bottom: 10px;
 }
 .modal-form-field.message {
@@ -54,7 +55,7 @@
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  padding: 16px;
+  padding: 12px 16px;
   resize: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:focus {
@@ -111,8 +112,8 @@
   }
 }
 .modal-form-send {
-  min-width: 200px;
-  min-height: 50px;
+  // min-width: 200px;
+  // min-height: 50px;
   align-self: center;
   padding: 10px 52px;
   background: #2196f3;
@@ -131,15 +132,37 @@
   }
 }
 
+@media screen and (max-width: 390px) {
+  .modal-form-title {
+    font-size: 5vw;
+  }
+  .modal-form-check-field {
+    font-size: 3vw;
+  }
+  .modal-form-check-policy{
+    font-size: 3vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .modal-form-check-field {
+    display: inline-block;
+  }
+  .modal-form-send {
+    padding: 1.8vw 10.5vw;
+    font-size: 3.2vw;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .modal-form-title {
     @include font(20px, 700, 23px);
   }
-  .modal-form-message::placeholder{
+  .modal-form-message::placeholder {
     @include font(12px, 400, 14px);
   }
-  .modal-form-check-field{
-     @include font(14px, 400, 24px);
+  .modal-form-check-field {
+    @include font(14px, 400, 24px);
   }
   .modal-form-check-policy {
     @include font(14px, 400, 24px);
