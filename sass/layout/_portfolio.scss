@@ -39,7 +39,7 @@
   width: 100%;
   height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   .project-thumb:hover & {
     transform: translateY(0);
@@ -84,7 +84,7 @@
   .project-thumb__text {
     font-size: 4vw;
   }
-}
+  }
 
 @media screen and (min-width: 768px) {
   .button-list {
@@ -94,6 +94,9 @@
   }
   .project-thumb__box {
     min-width: 306px;
+  }
+  .project-list-border__title_current{
+    font-size: 17px;
   }
 }
 
