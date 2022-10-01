@@ -1292,6 +1292,10 @@ address {
 }
 
 @media screen and (max-width: 440px) {
+  .project-thumb__box {
+    min-width: 100%;
+    padding: 7vw;
+  }
   .project-thumb__text {
     font-size: 4vw;
   }
