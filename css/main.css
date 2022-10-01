@@ -1285,6 +1285,7 @@ address {
 }
 
 .project-list-border__title {
+  display: block;
   margin-bottom: 4px;
   font-size: 18px;
   font-weight: 700;
@@ -1316,17 +1317,20 @@ address {
     margin-bottom: 40px;
     justify-content: center;
   }
+  .project-list__item {
+    width: calc((100% - 30px) / 2);
+  }
   .project-thumb__box {
     min-width: 306px;
-  }
-  .project-list-border__title_current {
-    font-size: 17px;
   }
 }
 @media screen and (min-width: 1200px) {
   .button-list {
     flex-wrap: nowrap;
     margin-bottom: 50px;
+  }
+  .project-list__item {
+    width: calc((100% - 60px) / 3);
   }
   .project-thumb__box {
     min-width: 322px;

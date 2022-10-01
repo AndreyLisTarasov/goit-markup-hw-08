@@ -65,6 +65,7 @@
   border: 1px solid #eeeeee;
 }
 .project-list-border__title {
+  display: block;
   margin-bottom: 4px;
   @include font(18px, 700, 36px);
   letter-spacing: 0.06em;
@@ -84,7 +85,7 @@
   .project-thumb__text {
     font-size: 4vw;
   }
-  }
+}
 
 @media screen and (min-width: 768px) {
   .button-list {
@@ -92,11 +93,11 @@
     margin-bottom: 40px;
     justify-content: center;
   }
+  .project-list__item {
+    width: calc((100% - 30px) / 2);
+  }
   .project-thumb__box {
     min-width: 306px;
-  }
-  .project-list-border__title_current{
-    font-size: 17px;
   }
 }
 
@@ -104,6 +105,9 @@
   .button-list {
     flex-wrap: nowrap;
     margin-bottom: 50px;
+  }
+  .project-list__item {
+    width: calc((100% - 60px) / 3);
   }
   .project-thumb__box {
     min-width: 322px;
