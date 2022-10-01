@@ -1162,8 +1162,6 @@ address {
 }
 
 .clients-list__link {
-  width: 210px;
-  height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: #afb1b8;
@@ -1175,9 +1173,14 @@ address {
 }
 
 @media screen and (max-width: 479px) {
-  .clients-list {
-    flex-direction: column;
-    align-items: center;
+  .clients-list__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 480px) {
+  .clients-list__link {
+    width: 210px;
+    height: 92px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1288,6 +1291,11 @@ address {
   color: var(--secondary-text-color);
 }
 
+@media screen and (max-width: 440px) {
+  .project-thumb__text {
+    font-size: 4vw;
+  }
+}
 @media screen and (min-width: 768px) {
   .button-list {
     max-width: 100%;

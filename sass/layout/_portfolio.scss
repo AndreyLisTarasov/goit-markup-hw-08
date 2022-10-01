@@ -2,9 +2,9 @@
   display: flex;
   flex-wrap: wrap;
   column-gap: 8px;
-  row-gap: 15px;  
+  row-gap: 15px;
   margin-bottom: 40px;
-  max-width: 326px;   
+  max-width: 326px;
 }
 .project-list {
   display: flex;
@@ -76,8 +76,13 @@
   color: var(--secondary-text-color);
 }
 
-@media screen and (max-width: 767px){
-  
+@media screen and (max-width: 440px) {
+  .project-thumb__text {
+    font-size: 4vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
 }
 
 @media screen and (min-width: 768px) {
