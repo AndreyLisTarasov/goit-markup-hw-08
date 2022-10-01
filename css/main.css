@@ -520,11 +520,6 @@ address {
   margin-left: 10px;
 }
 
-@media screen and (max-width: 479px) {
-  .subscribe-form {
-    width: calc(100% - 30px);
-  }
-}
 @media screen and (min-width: 480px) {
   .subscribe-form__input {
     width: 450px;
